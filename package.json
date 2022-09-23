@@ -4,8 +4,10 @@
     "description": "WebdriverIO demo project",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "wdio": "wdio run wdio.conf.js"
+        "test": "wdio ./wdio.conf.js",
+        "wdio": "wdio run wdio.conf.js",
+        "confidence-check": "wdio wdio.conf.js",
+        "test:headless": "npm run test -- --headless"
     },
     "keywords": [
         "webdriverIO"
